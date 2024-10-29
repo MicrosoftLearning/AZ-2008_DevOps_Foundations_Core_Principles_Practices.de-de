@@ -77,8 +77,8 @@ Die Übung umfasst die folgenden Aufgaben:
 
 1. Wählen Sie auf der Seite **Spoon-Knife** die Registerkarte **Probleme** aus.
 1. Klicken Sie auf der Seite **Willkommen bei Problemen!** auf **Neues Problem**.
-1. Geben Sie im Textfeld **Titel hinzufügen** **index.html looks rather austere** ein.
-1. Geben Sie im Textfeld **Beschreibung hinzufügen** **index.html können einen moderneren Touch gebrauchen** ein.
+1. Geben Sie in das Textfeld **Titel hinzufügen** **`index.html looks rather austere`** ein.
+1. In das Textfeld **Beschreibung hinzufügen** geben Sie **`index.html file can use a modern touch`** ein.
 1. Wählen Sie im aktuellen Bereich im Abschnitt „Zugewiesene Personen“ **Zugewiesene Personen hinzufügen…** aus, und wählen Sie im Abschnitt **Vorschläge** Ihren GitHub-Benutzernamen aus.
 1. Wählen Sie das Zahnradsymbol neben dem Eintrag **Bezeichnungen** aus, und wählen Sie in der Dropdownliste **Verbesserung** aus.
 1. Wählen Sie das Zahnradsymbol neben dem Eintrag **Projekte** aus, und wählen Sie in der Dropdownliste **DevOps Core Intro Project** aus.
@@ -92,7 +92,7 @@ Die Übung umfasst die folgenden Aufgaben:
 
 1. Wechseln Sie zurück zur Registerkarte **Code**.
 1. Wählen Sie in der oberen linken Ecke der Seite den Eintrag **main** aus, um die Dropdownliste **Verzweigungen/Tags wechseln** anzuzeigen.
-1. Geben Sie im Textfeld **Eine Verzweigung suchen oder erstellen...** **update index.html** ein, und wählen Sie dann **Verzweigung erstellen: index.html aus dem Eintrag „main“ aktualisieren** aus, um eine neue Verzweigung zu erstellen.
+1. Geben Sie in das Textfeld **Eine Verzweigung suchen oder erstellen...** **`update index.html`** ein und wählen Sie dann **Verzweigung erstellen: index.html aus dem Eintrag „main“ aktualisieren** aktualisieren, um eine neue Verzweigung zu erstellen.
 
    > **Hinweis:** Dadurch wird die neu erstellte Verzweigung automatisch zur aktuellen Verzweigung, wie durch den Inhalt der Dropdownliste angegeben.
 
@@ -113,7 +113,7 @@ Die Übung umfasst die folgenden Aufgaben:
    ```
 
 1. Wählen Sie rechts oben auf der Seite die Option **Änderungen committen** aus.
-1. Geben Sie im Fenster **Änderungen committen** im Textfeld **Erweiterte Beschreibung** **Bild und Absatztext geändert** ein, akzeptieren Sie die Standard-Commit-Nachricht, und wählen Sie **Änderungen committen** aus.
+1. Geben Sie im Fenster **Änderungen committen** in das Textfeld **Erweiterte Beschreibung** **`Modified the image and paragraph text`** ein, akzeptieren Sie die Standard-Commit-Mitteilung und wählen Sie **Änderungen committen**.
 
    > **Hinweis:** Sie haben auch die Möglichkeit, an diesem Punkt eine neue Verzweigung für den Commit zu erstellen.
 
@@ -140,7 +140,7 @@ Die Übung umfasst die folgenden Aufgaben:
    ```
 
 1. Wählen Sie rechts oben auf der Seite die Option **Änderungen committen** aus.
-1. Geben Sie im Fenster **Änderungen committen** im Textfeld **Erweiterte Beschreibung** **CSS-Tags und Selektoren geändert** ein, akzeptieren Sie die Standard-Commit-Nachricht, und wählen Sie **Änderungen committen** aus, um die Änderungen in der Verzweigung update-index.html zu committen.
+1. Geben Sie im Fenster **Änderungen committen** in das Textfeld **Erweiterte Beschreibung** **`Modified CSS tags and selectors`** ein, akzeptieren Sie die Standard-Commit-Mitteilung und wählen Sie **Änderungen committen** aus, um die Änderungen an der Verzweigung „update-index.html“ zu committen.
 
 ### Aufgabe 6: Erstellen und Mergen eines Pull Requests
 
@@ -164,7 +164,7 @@ Die Übung umfasst die folgenden Aufgaben:
 
    1. Überprüfen Sie die Zusammenfassung, die vom Feature GitHub Copilot für Pull Requests generiert wurde.
 
-   1. Geben Sie nach dem Generieren der Zusammenfassung **Addressing #1** in **Beschreibung hinzufügen** in der ersten Zeile ein, und wählen Sie **Pull Request erstellen** aus.
+   1. Nachdem die Zusammenfassung erstellt wurde, geben Sie **`Addressing #1`** in das Feld **Beschreibung hinzufügen** in der ersten Zeile ein und wählen **Pull Request erstellen**.
 
        ![GitHub Copilot-Zusammenfassung](media/github-pull-request-copilot-summary.png)
 
@@ -172,7 +172,7 @@ Die Übung umfasst die folgenden Aufgaben:
 
    > **Hinweis:** Wenn Sie das Feature GitHub Copilot für Pull Requests verwenden möchten, können Sie den nächsten Schritt überspringen.
 
-1. Geben Sie im Textfeld **Beschreibung hinzufügen** **Addressing #1** ein, und wählen Sie **Pull Request erstellen** aus.
+1. Geben Sie in das Textfeld **Beschreibung hinzufügen** **`Addressing #1`** ein und wählen Sie **Pull Request erstellen**.
 
    > **Hinweis:** Indem Sie **#1** einschließen, können Sie auf das erste Problem verweisen, das dieser Pull Request zugeordnet ist.
 
