@@ -27,7 +27,7 @@ Dieses Lab deckt Folgendes ab:
 
 ## Voraussetzungen
 
-- Abgeschlossen [Lab 01 – Agile Planung und Verwaltung mit GitHub](01-agile-planning-management-using-github.md)
+- Abgeschlossen [Lab 01 – Agile Planung und Verwaltung mit GitHub](01-agile-planning-management-using-github.md)
 - Abgeschlossen [Lab 02 – Implementieren des Arbeitsablaufs mit GitHub](02-implement-manage-repositories-using-github.md)
 - Abgeschlossen [Lab 03 – Implementieren von CI/CD mit GitHub Actions und IaC mit Bicep](03-implement-ci-cd-with-github-actions-and-iac-with-bicep.md)
 - Ein Azure-Abonnement, auf das Sie mindestens auf Besitzerebene zugreifen können.
@@ -40,7 +40,7 @@ Dieses Lab deckt Folgendes ab:
 
 1. Öffnen Sie einen Webbrowser, und navigieren Sie zum Azure-Portal unter `https://portal.azure.com`.
 1. Wenn Sie dazu aufgefordert werden, melden Sie sich mit Ihrem Microsoft Entra ID-Konto an, das Besitzerzugriff auf das Azure-Abonnement hat, das Sie in der vorherigen Übung verwendet haben.
-1. Geben Sie in der Registerkarte des Webbrowsers, in der das Azure-Portal geöffnet ist, in das Suchfeld oben auf der Seite **Abonnements** ein und wählen Sie in der Ergebnisliste **Abonnements** aus.
+1. Geben Sie in der Registerkarte des Webbrowsers, die das Azure-Portal anzeigt, in das Suchfeld oben auf der Seite **`Subscriptions`** ein und wählen Sie in der Ergebnisliste **Abonnements**.
 1. Wählen Sie auf der Seite „Abonnements“ im vertikalen Menü auf der linken Seite **Ressourcenanbieter** aus.
 1. Suchen Sie in der Liste der Ressourcenanbieter nach **Microsoft.Chaos**, und wählen Sie sie aus.
 1. Wenn Sie den Ressourcenanbieter **Microsoft.Chaos** ausgewählt haben, wählen Sie in der Symbolleiste **Registrieren** aus.
@@ -49,7 +49,7 @@ Dieses Lab deckt Folgendes ab:
 
 ## Übung 1: Verbessern der Workload-Resilienz mithilfe von Traffic Manager
 
-In dieser Übung werden Sie eine belastbare Konfiguration implementieren, die Anfragen zwischen den beiden .NET-Web-App-Instanzen in zwei verschiedenen Azure-Regionen mit Hilfe von Azure Traffic Manager verteilt.
+In dieser Übung werden Sie eine belastbare Konfiguration implementieren, die Anforderungen zwischen den beiden .NET Web App-Instanzen in zwei unterschiedlichen Azure-Regionen mithilfe von Azure Traffic Manager verteilt.
 
 > **Hinweis:** Für den Zweck unseres Labs betrachten wir die Bereitstellung der .NET-basierten Webanwendung eShopOnWeb in der Region USA, Osten als die primäre Instanz. Während diese Überlegung in diesem Fall rein willkürlich ist (und nur zu Demonstrationszwecken dient), könnte es Szenarien geben, in denen es vorteilhaft sein könnte, einen der Endpunkte zu priorisieren.
 
@@ -60,11 +60,11 @@ Die Übung umfasst die folgenden Aufgaben:
 
 ### Aufgabe 1: Implementieren eines Traffic Manager-Profils
 
-1. Geben Sie in der Registerkarte des Webbrowsers, in der das Azure-Portal geöffnet ist, in das Suchfeld oben auf der Seite **Traffic Manager-Profile** ein und wählen Sie in der Ergebnisliste **Traffic Manager-Profile** aus.
+1. Geben Sie auf der Registerkarte des Webbrowsers, die das Azure-Portal anzeigt, in das Suchtextfeld oben auf der Seite **`Traffic Manager profiles`** ein und wählen Sie in der Ergebnisliste **Traffic Manager-Profile** aus.
 1. Wählen Sie auf der Seite **Lastenausgleich \| Traffic Manager ** **+ Erstellen** aus.
-1. Führen Sie auf der Seite **Traffic Manager-Profil erstellen** die folgenden Aktionen durch:
+1. Führen Sie auf der Seite **Traffic Manager-Profil erstellen** die folgenden Aktionen aus:
 
-   - Geben Sie im Textfeld **Name** **devopsfoundationstmprofile** ein.
+   - Geben Sie **`devopsfoundationstmprofile`** in das Textfeld **Name** ein.
 
        > **Hinweis:** Der Name des Traffic Manager-Profils muss global eindeutig sein. Wenn Sie eine Fehlermeldung erhalten, die angibt, dass der Name bereits verwendet wird, probieren Sie einen anderen Namen aus, und notieren Sie ihn. Sie benötigen ihn in diesem Lab.
 
@@ -73,7 +73,7 @@ Die Übung umfasst die folgenden Aufgaben:
    > **Hinweis:** Wir haben die Methode des Prioritätsroutings gewählt, um die etwas willkürliche Annahme widerzuspiegeln, dass alle Anfragen von der Azure App Service Web-App in der Region USA, Osten verarbeitet werden sollen.
 
    - Stellen Sie sicher, dass Ihr neues Azure-Abonnement wird in der Dropdownliste **Abonnement** angezeigt wird.
-   - Wählen Sie den Link **Neue erstellen** unter der Dropdownliste **Ressourcengruppe**. Geben Sie im Textfeld **Name** **devops-foundations-rg** ein, und wählen Sie dann **OK** aus.
+   - Wählen Sie den Link **Neu erstellen** unterhalb der Dropdown-Liste **Ressourcengruppe**, geben Sie in das Textfeld **Name** **`rg-devops-foundations`** ein und wählen Sie dann **OK**.
    - Wählen Sie in der Dropdownliste **Ort der Ressourcengruppe** die gleiche Azure-Region aus, die Sie in den vorherigen Labs dieses Kurses ausgewählt haben.
 
 1. Wählen Sie **Erstellen** aus, um den Bereitstellungsprozess zu starten.
@@ -81,7 +81,7 @@ Die Übung umfasst die folgenden Aufgaben:
    > **Hinweis**: Warten Sie, bis die Bereitstellung abgeschlossen ist. Dieser Vorgang sollte nicht länger als 1 Minute dauern.
 
 1. Wählen Sie auf der Seite **Lastenausgleich \| Traffic Manager** ggf. **Aktualisieren** aus, und wählen Sie dann **devopsfoundationstmprofile** aus.
-1. Kopieren Sie auf der Seite **devopsfoundationstmprofile** im Abschnitt **Essentials** den Wert der Einstellung **DNS-Namens**, und notieren Sie ihn. Sie benötigen ihn in diesem Lab.
+1. Kopieren Sie auf der Seite **devopsfoundationstmprofile** im Abschnitt **Essentials** den Wert der Einstellung **DNS-Namens**, und notieren Sie ihn. Sie werden sie während der gesamten Übung benötigen.
 1. Wählen Sie auf der Seite **devopsfoundationstmprofile** im linken Navigationsmenü im Abschnitt **Einstellungen** **Konfiguration** aus.
 1. Sehen Sie sich den Inhalt der Seite **devopsfoundationstmprofile \| Konfiguration** an. Beachten Sie, dass **DNS-Zeit bis Live (TTL)** standardmäßig auf **60** Sekunden festgelegt ist. Ändern Sie den Wert auf **5** Sekunden.
 
@@ -102,7 +102,7 @@ Die Übung umfasst die folgenden Aufgaben:
 1. Führen Sie im Bereich **Endpunkt hinzufügen** die folgenden Aktionen aus:
 
    - Stellen Sie sicher, dass **Azure-Endpunkt** in der Dropdownliste **Typ** angezeigt wird.
-   - Geben Sie im Textfeld **Name** **DevOps Foundations-Web-App – USA, Osten**ein.
+   - Geben Sie **`DevOps Foundations web app - East US`** in das Textfeld **Name** ein.
    - Stellen Sie sicher, dass das Kontrollkästchen **Endpunkt aktivieren** aktiviert ist.
    - Wählen Sie in der Dropdownliste **Zielressourcengruppe** die Option **App Service** aus.
    - Wählen Sie in der Dropdownliste **Zielressource** im Abschnitt **rg-eshoponweb-eastus** den Namen der App Service-Web-App in der Azure-Region USA, Osten aus.
@@ -121,7 +121,7 @@ Die Übung umfasst die folgenden Aufgaben:
 1. Führen Sie im Bereich **Endpunkt hinzufügen** die folgenden Aktionen aus:
 
    - Stellen Sie sicher, dass **Azure-Endpunkt** in der Dropdownliste **Typ** angezeigt wird.
-   - Geben Sie im Textfeld **Name** **DevOps Foundations-Web-App – Europa, Westen**ein.
+   - Geben Sie **`DevOps Foundations web app - West Europe`** in das Textfeld **Name** ein.
    - Stellen Sie sicher, dass das Kontrollkästchen **Endpunkt aktivieren** aktiviert ist.
    - Wählen Sie in der Dropdownliste **Zielressourcengruppe** die Option **App Service** aus.
    - Wählen Sie in der Dropdownliste **Zielressource** im Abschnitt **rg-eshoponweb-westeurope** den Namen der App Service-Web-App in der Azure-Region Europa, Westen aus.
@@ -151,7 +151,7 @@ Die Übung umfasst die folgenden Aufgaben:
 
 ## Übung 2: Testen der Workload-Resilienz mithilfe von Azure Chaos Studio
 
-In dieser Übung testen Sie die Workload-Resilienz mithilfe von Azure Chaos Studio.
+In dieser Übung testen Sie die Ausfallsicherheit von Workloads mithilfe von Azure Chaos Studio.
 
 > **Hinweis:** In dieser Übung wird die Verwendung von Azure Chaos Studio veranschaulicht. Azure Chaos Studio dient dazu, die Widerstandsfähigkeit von Anwendungen und Diensten zu messen, zu verstehen und aufzubauen. Dies wird durch die absichtliche Unterbrechung von Workloads erreicht, um Ausfallsicherheitslücken zu identifizieren und entsprechende Abhilfemaßnahmen proaktiv statt reaktiv zu implementieren.
 
@@ -163,7 +163,7 @@ Die Übung umfasst die folgenden Aufgaben:
 
 ### Aufgabe 1: Konfigurieren der Azure Chaos Studio-Umgebung
 
-1. Geben Sie in der Registerkarte des Webbrowsers, in der das Azure-Portal geöffnet ist, in das Suchfeld oben auf der Seite **Chaos Studio** ein und wählen Sie in der Ergebnisliste **Chaos Studio** aus.
+1. Geben Sie in der Registerkarte des Webbrowsers, die das Azure-Portal anzeigt, in das Suchfeld oben auf der Seite **`Chaos Studio`** ein und wählen Sie in der Ergebnisliste **Chaos Studio**.
 1. Wählen Sie auf der Seite **Chaos Studio** **Ziele** aus.
 1. Wählen Sie auf der Seite **Chaos Studio \| Ziele** die Azure App Service Web App-Instanz in der Ressourcengruppe **rg-eshoponweb-eastus** in der Region USA, Osten aus, die Sie im vorherigen Lab bereitgestellt haben.
 1. Wählen Sie in der Symbolleiste den Header der Dropdownliste **Ziele aktivieren** aus, und wählen Sie in der Dropdownliste **Dienst-direkte Ziele aktivieren (Alle Ressourcen)** aus.
@@ -173,24 +173,24 @@ Die Übung umfasst die folgenden Aufgaben:
 
 ### Aufgabe 2: Implementieren eines Experiments
 
-1. Geben Sie im Azure-Portal in das Suchfeld oben auf der Seite **Chaos Studio** ein und wählen Sie in der Ergebnisliste **Chaos Studio** aus.
+1. Geben Sie im Azure-Portal in das Suchfeld oben auf der Seite **`Chaos Studio`** ein und wählen Sie in der Ergebnisliste **Chaos Studio**.
 1. Wählen Sie auf der Seite **Chaos Studio** **Experimente** aus.
 1. Wählen Sie auf der Seite **Experimente** **+ Erstellen** aus, und wählen Sie dann in der Dropdownliste **Neues Experiment** aus.
 1. Führen Sie auf der Registerkarte **Grundlagen** der Seite **Experiment erstellen** die folgenden Aktionen aus:
 
    - Stellen Sie sicher, dass Ihr Azure-Abonnement wird in der Dropdownliste **Abonnement** angezeigt wird.
-   - Wählen Sie den Link **Neue erstellen** unter der Dropdownliste **Ressourcengruppe**. Geben Sie im Textfeld **Name** **devops-foundations-rg** ein, und wählen Sie dann **OK** aus.
-   - Geben Sie im Abschnitt **Experimentdetails** im Textfeld **Name** **DevOps_Foundations_Labs_Experiment_01** ein.
+   - Wählen Sie den Link **Neu erstellen** unterhalb der Dropdown-Liste **Ressourcengruppe**, geben Sie in das Textfeld **Name** **`rg-devops-foundations`** ein und wählen Sie dann **OK**.
+   - Im Abschnitt **Experimentdetails** geben Sie in das Textfeld **Name** **`DevOps_Foundations_Labs_Experiment_01`** ein.
    - Wählen Sie aus der Dropdownliste **Region** die Azure-Region **Europa, Westen** aus.
 
    > **Hinweis:** Sie könnten jede beliebige Azure-Region wählen, aber da Sie Ausfälle bei einer Ressource in der Region Europa, Westen testen, scheint eine andere Region als USA, Osten angemessener.
 
 1. Wählen Sie auf der Registerkarte **Grundeinstellungen** der Seite **Experiment erstellen** die Option **Weiter: Berechtigungen >** aus.
-1. Übernehmen Sie auf der Registerkarte **Berechtigungen** die Standardoption **Systemseitig zugewiesene Identität**, und wählen Sie dann **Weiter: Experiment-Designer >** aus.
-1. Führen Sie auf der Registerkarte **Experiment-Designer** die folgenden Aktionen aus:
+1. Akzeptieren Sie auf der Registerkarte **Berechtigungen** die Standardoption **Systemzugeordnete Identität** und wählen Sie dann **Weiter: Experiment-Designer>**.
+1. Führen Sie auf der Registerkarte **Experiment-Designer** die folgenden Aktionen durch:
 
-   - Geben Sie im Textfeld **Schritt** **Schritt 1: Failover für eine App Service-Web-App** ein.
-   - Geben Sie im Textfeld **Branch** **Branch 1: Emulieren eines App Service-Ausfalls** ein.
+   - In das Textfeld **Schritt** geben Sie **`Step 1: Failover an App Service web app`** ein.
+   - In das Textfeld **Verzweigung** geben Sie **`Branch 1: Emulate an App Service failure`** ein.
    - Wählen Sie **+ Aktion hinzufügen** aus, und wählen Sie in der Dropdownliste **Ausfall hinzufügen** aus.
 
 1. Wählen Sie auf der Registerkarte **Ausfalldetails** im Bereich **Ausfall hinzufügen** in der Dropdownliste **Ausfalloptionen** **Beenden von App Service** aus, und legen Sie den Wert **Dauer (Minuten)** auf 10 fest.
@@ -203,7 +203,7 @@ Die Übung umfasst die folgenden Aufgaben:
 
    > **Hinweis:** Damit das Experiment erfolgreich ist, müssen Sie dem neu erstellten verwalteten Dienstkonto auch ausreichende Berechtigungen zum Anhalten der Azure App Service-Web-App erteilen. Wir werden zu diesem Zweck die in Azure vorhandene Mitwirkendenrolle verwenden, aber Sie können auch eine benutzerdefinierte Rolle erstellen, wenn Sie dem Prinzip des geringsten Privilegs folgen möchten.
 
-1. Geben Sie im Azure-Portal oben auf der Seite im Suchtextfeld **App Services** ein, und wählen Sie in der Ergebnisliste **App Services** aus.
+1. Geben Sie im Azure-Portal in das Suchtextfeld oben auf der Seite **`App Services`** ein und wählen Sie in der Ergebnisliste **App-Dienste**.
 1. Wählen Sie auf der Seite **App Services** die Azure App Service-Web-App in der Region USA, Osten aus, die Sie im vorherigen Lab bereitgestellt haben.
 1. Wählen Sie auf dem Blatt für das Speicherkonto im vertikalen Menü links **Zugriffssteuerung (IAM)** aus.
 1. Wählen Sie auf der Seite **Zugriffssteuerung (IAM)** der Web-App **+ Hinzufügen** und dann in der Dropdownliste die Option **Rollenzuweisung hinzufügen** aus.
@@ -247,12 +247,12 @@ Die Übung umfasst die folgenden Aufgaben:
 
 ### Übung 3: Entfernen der in den Labs verwendeten Ressourcen
 
-In dieser Übung entfernen Sie die in den Labs verwendeten Ressourcen.
+In dieser Übung werden Sie die in den Übungen verwendeten Ressourcen entfernen.
 
-1. Geben Sie in der Registerkarte des Webbrowsers, in der das Azure-Portal geöffnet ist, in das Suchfeld oben auf der Seite **Ressourcengruppen** ein, und wählen Sie in der Ergebnisliste **Ressourcengruppen**aus.
+1. Geben Sie in der Registerkarte des Webbrowsers, die das Azure-Portal anzeigt, in das Suchtextfeld oben auf der Seite **`Resource groups`** ein und wählen Sie in der Ergebnisliste **Ressourcengruppen**.
 1. Wählen Sie auf der Seite **Ressourcengruppen** in der Liste der Ressourcengruppen die von Ihnen in diesem Lab erstellte Ressourcengruppe aus.
 1. Wählen Sie auf der Ressourcengruppenseite die Option **Ressourcengruppe löschen** aus.
-1. Geben Sie im Textfeld **Ressourcengruppennamen eingeben, um den Löschvorgang zu bestätigen** den Namen der Ressourcengruppe ein, die Sie löschen wollen, und wählen Sie **Löschen** aus.
+1. Geben Sie in das Textfeld **Namen der Ressourcengruppe zur Bestätigung der Löschung eingeben** den Namen der Ressourcengruppe ein, die Sie löschen möchten, und wählen Sie dann **Löschen**.
 
    > **Hinweis:** Warten Sie, bis die Ressourcengruppe gelöscht wurde. Das sollte weniger als eine Minute dauern.
 

@@ -42,7 +42,7 @@ Die Übung umfasst die folgenden Aufgaben:
 1. Führen Sie auf der Seite **Neues Repository erstellen** die folgenden Aktionen aus:
 
    - Wählen Sie in der Dropdownliste **Besitzer** Ihren GitHub-Benutzernamen aus.
-   - Geben Sie im Textfeld **Name des Repository** **DevOpsCoreIntroRepo** ein.
+   - Geben Sie in das Textfeld **Repositoryname** **`DevOpsCoreIntroRepo`** ein.
    - Ändern Sie die Sichtbarkeit des Repositorys auf **Privat**.
    - Aktivieren Sie das Kontrollkästchen **README-Datei hinzufügen**.
    - Wählen Sie in der Dropdownliste **.gitignore hinzufügen** **Visual Studio**aus.
@@ -65,15 +65,15 @@ Die Übung umfasst die folgenden Aufgaben:
 1. Wählen Sie auf der Seite **Meilensteine** **Neuer Meilenstein** aus.
 1. Führen Sie auf der Seite **Neuer Meilenstein** die folgenden Schritte aus:
 
-   - Geben Sie im Textfeld **Titel** **Alpha-Release** ein.
+   - Geben Sie **`alpha release`** in das Textfeld **Titel** ein.
    - Geben Sie im Textfeld **Fälligkeitsdatum (optional)** das Datum ein, das eine Woche nach dem aktuellen Datum liegt.
-   - Geben Sie im Textfeld **Beschreibung** **Fertigstellung der Alphaversion** ein.
+   - In das Textfeld **Beschreibung** geben Sie **`Completion of the alpha release`** ein.
 
 1. Wählen Sie **Meilenstein erstellen** aus.
-1. Wiederholen Sie die letzten drei Schritte, um einen Meilenstein für die **Beta-Release** mit dem Fälligkeitsdatum zwei Wochen nach dem aktuellen Datum zu erstellen. Geben Sie im Textfeld **Beschreibung** **Fertigstellung der Betaversion** ein.
+1. Wiederholen Sie die letzten drei Schritte, um einen Meilenstein für die **Beta-Release** mit dem Fälligkeitsdatum zwei Wochen nach dem aktuellen Datum zu erstellen. In das Textfeld **Beschreibung** geben Sie **`Completion of the beta release`** ein.
 1. Navigieren Sie zurück zur Seite **Issues** und wählen Sie **Neues Issue** aus.
-1. Geben Sie im Textfeld **Titel hinzufügen** **README-Seite des Repository ist leer** ein.
-1. Geben Sie im Textfeld **Beschreibung hinzufügen** **Kürze mag eine Tugend sein, aber diese README-Seite könnte wirklich etwas Text vertragen**.
+1. Geben Sie in das Textfeld **Titel hinzufügen** **`Repo README page is empty`** ein.
+1. In das Textfeld **Beschreibung hinzufügen** geben Sie **`Brevity might be a virtue, but this README page can really use some text`** ein.
 1. Wählen Sie das Zahnradsymbol neben dem Eintrag **Meilenstein** aus, und wählen Sie in der Dropdownliste **Alpha-Release** aus.
 1. Wählen Sie das Zahnradsymbol neben dem Eintrag **Bezeichnungen** aus, und wählen Sie in der Dropdownliste **Fehler** aus.
 1. Wählen Sie **Neues Issue erstellen** aus. Beachten Sie, dass dem Issue automatisch **#1** zugewiesen wurde.
@@ -87,8 +87,8 @@ Die Übung umfasst die folgenden Aufgaben:
    > **Hinweis:** Sie können aber auch ganz von vorne anfangen und das Projekt im Tabellen-, Board- oder Roadmap-Format anzeigen.
 
 1. Wählen Sie auf der Seite „Neues Projekt“ den automatisch generierten Projektnamen. Dadurch wird automatisch die Seite **Projekteinstellungen** angezeigt.
-1. Geben Sie in das Textfeld **Projektname** **DevOps Core Intro-Projekt** ein.
-1. Geben Sie im Textfeld **Kurzbeschreibung** **Einführung in GitHub-Projekte** ein, und wählen Sie **Speichern** aus.
+1. Geben Sie in das Textfeld **Projektname** **`DevOps Core Intro Project`** ein.
+1. In das Textfeld **Kurzbeschreibung** geben Sie **`Introduction to GitHub Projects`** ein und wählen **Speichern**.
 1. Geben Sie im Bereich **README** den folgenden Text ein
 
    > **Hinweis:** Im Abschnitt **README** finden Sie einen vereinfachten Markdown-Editor, mit dem Sie eine visuell ansprechende README-Seite für das Projekt erstellen können. Sie können die Symbole in der Symbolleiste verwenden, um den Text zu formatieren und die Änderungen in der Registerkarte **Vorschau** überprüfen. Kopieren Sie den folgenden Text, und fügen Sie ihn in den README-Editor ein:
@@ -125,12 +125,12 @@ Die Übung umfasst die folgenden Aufgaben:
    > **Hinweis:** Dieses Layout stellt ein sehr einfaches Kanban-Board dar. In jeder Spalte können Sie einzelne Aufgaben hinzufügen. Außerdem können Sie neue Spalten hinzufügen.
 
 1. Um eine zusätzliche Spalte hinzuzufügen, wählen Sie das Symbol **+** rechts neben der Spalte **Erledigt** und dann **+ Neue Spalte**.
-1. Geben Sie im Fenster **Neue Option** in das Textfeld **Beschriftung** den Eintrag **In Review** ein und wählen Sie eine Farbe, die Sie der Spalte zuweisen möchten. Geben Sie im Textfeld **Beschreibung** **Dieses Element wird gerade überprüft**, und wählen Sie dann **Speichern** aus.
+1. Geben Sie im Fenster **Neue Option** in das Textfeld **Beschriftungstext** **`Review In Progress`** ein und wählen Sie eine Farbe, die Sie der Spalte zuweisen möchten. Geben Sie in das Textfeld **Beschreibung** **`This item is being reviewed`** ein und wählen Sie dann **Speichern**.
 1. Wählen Sie den kleinen Kreis neben der Beschriftung der neu hinzugefügten Spalte **In Review** aus, und ziehen Sie ihn zwischen die Spalten **In Bearbeitung** und **Erledigt**.
 
 ## Übung 2: Erstellen und Verwalten von Projektboard-Elementen
 
-In dieser Übung erstellen und verwalten Sie Aufgaben auf dem Projektboard.
+In dieser Übung erstellen und verwalten Sie Aufgaben auf dem Projektboard
 
 > **Hinweis:** Es gibt zwei grundlegende Möglichkeiten, um Aufgaben zu einem Projektboard hinzuzufügen. Sie können einen Entwurf für eine Aufgabe erstellen oder eine Aufgabe für ein vorhandenes Issue in einem GitHub-Repository hinzufügen.
 
@@ -146,11 +146,11 @@ Die Übung umfasst die folgenden Aufgaben:
 
    > **Hinweis:** Im automatisch angezeigten Textfeld können Sie entweder mit der Eingabe beginnen, um einen Entwurf zu erstellen, oder Sie geben **#** ein, um auf ein vorhandenes Issue in einem Ihrer GitHub-Repositorys zu verweisen. Wir beginnen mit der ersten dieser beiden Möglichkeiten.
 
-1. Geben Sie im Textfeld **Wiki fehlt** ein, und drücken Sie dann die **Eingabetaste** auf der Tastatur. Dadurch wird der Spalte **ToDo** ein neuer Aufgabenentwurf hinzugefügt.
+1. Geben Sie in das Textfeld **`Missing Wiki`** ein und drücken Sie dann die **Eingabetaste** auf der Tastatur. Dadurch wird der Spalte **ToDo** ein neuer Aufgabenentwurf hinzugefügt.
 1. Wählen Sie im neu hinzugefügten Aufgabenentwurf das Auslassungszeichen (…) aus, und wählen Sie im Dropdownmenü **Zu Issue konvertieren** aus.
 1. Wählen Sie in der Dropdownliste **Element auswählen** **DevOpsCoreIntroRepo** aus, um die Aufgabe zu dem Repository hinzuzufügen, das Sie in der vorherigen Übung erstellt haben. Beachten Sie, dass dem Issue automatisch die Bezeichnung **#2** zugewiesen wurde.
 1. Wählen Sie das Issue **Wiki fehlt** aus.
-1. Beachten Sie, dass jetzt im Bereich **Wiki fehlt # 2** zusätzliche Konfigurationseinstellungen wie Bezeichnungen und Meilensteine verfügbar sind.
+1. Beachten Sie im Bereich **Fehlendes Wiki #2**, dass Ihnen an dieser Stelle weitere Konfigurationseinstellungen zur Verfügung stehen, einschließlich Bezeichnungen und Meilensteinen.
 1. Wählen Sie **Bezeichnungen hinzufügen** und wählen Sie in der Dropdownliste **Element auswählen** **Verbesserung** aus.
 1. Wählen Sie **Meilenstein hinzufügen** aus, und wählen Sie in der Dropdownliste**Element auswählen** **Alpha-Release** aus.
 1. Schließen Sie den Bereich **Wiki fehlt #2**.
@@ -158,7 +158,8 @@ Die Übung umfasst die folgenden Aufgaben:
    > **Hinweis:** Jetzt fügen Sie einen weiteren Aufgabenentwurf hinzu und konvertieren ihn zu einem Issue.
 
 1. Wählen Sie auf der Seite **DevOps Core Intro-Projekt** in der Spalte **ToDo** **+ Aufgabe hinzufügen** aus.
-1. Geben Sie im Textfeld **Zusätzliche Projektmitarbeiter benötigt** ein, und drücken Sie dann die **Eingabetaste** auf der Tastatur. Dadurch wird der Spalte **ToDo** ein neuer Aufgabenentwurf hinzugefügt.
+1. Geben Sie in das Textfeld **`Additional collaborators needed`** ein und drücken Sie dann **Eingabe** auf der Tastatur. Dadurch wird der Spalte **ToDo** ein neuer Aufgabenentwurf hinzugefügt.
+1. Markieren Sie in dem neu hinzugefügten Entwurf das Auslassungszeichen und wählen Sie im Dropdownmenü **In Issue konvertieren** und wählen Sie **DevOpsCoreIntroRepo** aus, um den Artikel zum Repository hinzuzufügen.
 
 ### Aufgabe 2: Hinzufügen einer Aufgabe für ein Issue
 
@@ -199,7 +200,7 @@ Die Übung umfasst die folgenden Aufgaben:
 1. Beachten Sie, dass das Schließen der Aufgabe die folgenden Aktionen zur Folge hatte:
 
    - Der Status des Elements wurde automatisch auf **Erledigt** geändert, was durch einen zusätzlichen Kommentar angezeigt wird. Dieser besagt, dass der Bot **github-project-automation** das Element von **In Bearbeitung** auf **Erledigt** im **DevOps Core Intro-Projekt** verschoben hat.
-   - Der Meilenstein **Alpha-Release** wurde als erledigt markiert. Dies wird auf der Seite durch den grünen horizontalen Balken im Abschnitt **Meilenstein** deutlich gemacht.
+   - Der Meilenstein **Alpha-Release** wurde zu 50 % abgeschlossen, wie durch den grünen horizontalen Balken im Abschnitt **Meilenstein** auf der Seite angezeigt.
 
    > **Hinweis:** Wenn die Änderungen nicht angezeigt werden, aktualisieren Sie die Seite.
 
