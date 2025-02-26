@@ -229,6 +229,7 @@ Die Übung umfasst die folgenden Aufgaben:
     RESOURCE-GROUP: rg-eshoponweb-eastus
    ```
 
+1. Ersetzen Sie im Bereich **Bearbeiten** die Variable `location` in Zeile 9 durch die Region, die Ihrem Standort am nächsten liegt. 
 1. Ersetzen Sie im Bereich **Bearbeiten** den Platzhalter `eshoponweb-webapp-NAME` in Zeile 11 durch den Namen der **zweiten** Azure App Service-Web-App, die Sie zuvor in dieser Übung generiert haben.
 1. Wählen Sie im Bereich **.github/workflows/eshoponweb-cicd.yml** **Änderungen committen** aus, und wählen Sie dann erneut **Änderungen committen** aus.
 1. Wählen Sie im Webbrowserfenster, in dem die Seite des geforkten GitHub-Repositorys **eShopOnWeb** angezeigt wird, **Einstellungen** aus.

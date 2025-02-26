@@ -61,7 +61,7 @@ Die Übung umfasst die folgenden Aufgaben:
 ### Aufgabe 1: Implementieren eines Traffic Manager-Profils
 
 1. Geben Sie auf der Registerkarte des Webbrowsers, die das Azure-Portal anzeigt, in das Suchtextfeld oben auf der Seite **`Traffic Manager profiles`** ein und wählen Sie in der Ergebnisliste **Traffic Manager-Profile** aus.
-1. Wählen Sie auf der Seite **Lastenausgleich \| Traffic Manager ** **+ Erstellen** aus.
+1. Wählen Sie auf der Seite **Lastenausgleichsdienste \| Traffic Manager ****+ Erstellen** aus.
 1. Führen Sie auf der Seite **Traffic Manager-Profil erstellen** die folgenden Aktionen aus:
 
    - Geben Sie **`devopsfoundationstmprofile`** in das Textfeld **Name** ein.
@@ -80,7 +80,7 @@ Die Übung umfasst die folgenden Aufgaben:
 
    > **Hinweis**: Warten Sie, bis die Bereitstellung abgeschlossen ist. Dieser Vorgang sollte nicht länger als 1 Minute dauern.
 
-1. Wählen Sie auf der Seite **Lastenausgleich \| Traffic Manager** ggf. **Aktualisieren** aus, und wählen Sie dann **devopsfoundationstmprofile** aus.
+1. Wählen Sie auf der Seite **Lastenausgleichs-Dienste \| Traffic Manager** ggf. **Aktualisieren** aus, und wählen Sie dann **devopsfoundationstmprofile** aus.
 1. Kopieren Sie auf der Seite **devopsfoundationstmprofile** im Abschnitt **Essentials** den Wert der Einstellung **DNS-Namens**, und notieren Sie ihn. Sie werden sie während der gesamten Übung benötigen.
 1. Wählen Sie auf der Seite **devopsfoundationstmprofile** im linken Navigationsmenü im Abschnitt **Einstellungen** **Konfiguration** aus.
 1. Sehen Sie sich den Inhalt der Seite **devopsfoundationstmprofile \| Konfiguration** an. Beachten Sie, dass **DNS-Zeit bis Live (TTL)** standardmäßig auf **60** Sekunden festgelegt ist. Ändern Sie den Wert auf **5** Sekunden.
