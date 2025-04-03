@@ -69,14 +69,14 @@ Die Übung umfasst die folgenden Aufgaben:
    - Geben Sie im Textfeld **Fälligkeitsdatum (optional)** das Datum ein, das eine Woche nach dem aktuellen Datum liegt.
    - In das Textfeld **Beschreibung** geben Sie **`Completion of the alpha release`** ein.
 
-1. Wählen Sie **Meilenstein erstellen** aus.
+1. Wählen Sie **Neuer Meilenstein** aus.
 1. Wiederholen Sie die letzten drei Schritte, um einen Meilenstein für die **Beta-Release** mit dem Fälligkeitsdatum zwei Wochen nach dem aktuellen Datum zu erstellen. In das Textfeld **Beschreibung** geben Sie **`Completion of the beta release`** ein.
 1. Navigieren Sie zurück zur Seite **Issues** und wählen Sie **Neues Issue** aus.
 1. Geben Sie in das Textfeld **Titel hinzufügen** **`Repo README page is empty`** ein.
 1. In das Textfeld **Beschreibung hinzufügen** geben Sie **`Brevity might be a virtue, but this README page can really use some text`** ein.
 1. Wählen Sie das Zahnradsymbol neben dem Eintrag **Meilenstein** aus, und wählen Sie in der Dropdownliste **Alpha-Release** aus.
 1. Wählen Sie das Zahnradsymbol neben dem Eintrag **Bezeichnungen** aus, und wählen Sie in der Dropdownliste **Fehler** aus.
-1. Wählen Sie **Neues Issue erstellen** aus. Beachten Sie, dass dem Issue automatisch **#1** zugewiesen wurde.
+1. Klicken Sie auf **Erstellen**. Beachten Sie, dass dem Issue automatisch **#1** zugewiesen wurde.
 
 ### Aufgabe 3: Erstellen eines GitHub-Projekts
 
@@ -158,7 +158,7 @@ Die Übung umfasst die folgenden Aufgaben:
    > **Hinweis:** Jetzt fügen Sie einen weiteren Aufgabenentwurf hinzu und konvertieren ihn zu einem Issue.
 
 1. Wählen Sie auf der Seite **DevOps Core Intro-Projekt** in der Spalte **ToDo** **+ Aufgabe hinzufügen** aus.
-1. Geben Sie in das Textfeld **`Additional collaborators needed`** ein und drücken Sie dann **Eingabe** auf der Tastatur. Dadurch wird der Spalte **ToDo** ein neuer Aufgabenentwurf hinzugefügt.
+1. Geben Sie in das Textfeld **`Additional collaborators needed`** ein und drücken Sie dann **STRG + Eingabetaste** auf der Tastatur. Dadurch wird der Spalte **ToDo** ein neuer Aufgabenentwurf hinzugefügt.
 1. Markieren Sie in dem neu hinzugefügten Entwurf das Auslassungszeichen und wählen Sie im Dropdownmenü **In Issue konvertieren** und wählen Sie **DevOpsCoreIntroRepo** aus, um den Artikel zum Repository hinzuzufügen.
 
 ### Aufgabe 2: Hinzufügen einer Aufgabe für ein Issue
