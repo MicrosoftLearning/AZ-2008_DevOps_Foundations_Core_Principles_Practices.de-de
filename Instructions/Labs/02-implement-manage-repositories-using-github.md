@@ -82,7 +82,8 @@ Die Übung umfasst die folgenden Aufgaben:
 1. Wählen Sie im aktuellen Bereich im Abschnitt „Zugewiesene Personen“ **Zugewiesene Personen hinzufügen…** aus, und wählen Sie im Abschnitt **Vorschläge** Ihren GitHub-Benutzernamen aus.
 1. Wählen Sie das Zahnradsymbol neben dem Eintrag **Bezeichnungen** aus, und wählen Sie in der Dropdownliste **Verbesserung** aus.
 1. Wählen Sie das Zahnradsymbol neben dem Eintrag **Projekte** aus, und wählen Sie in der Dropdownliste **DevOps Core Intro Project** aus.
-1. Klicken Sie auf **Neues Problem übermitteln**.
+1. Klicken Sie auf **Erstellen**, um das neue Problem zu speichern.
+1. Öffnen Sie das neue Problem erneut.
 1. Im Bereich **index.html looks rather austere** im Abschnitt **Projekte** legen Sie **Status** auf **In Bearbeitung** fest.
 1. Wählen Sie auf der Seite **Spoon-Knife** die Registerkarte **Projekte** aus.
 1. Wählen Sie auf der Seite **Willkommen bei den neuen Projekten** die Option **DevOps Core Intro Project** aus.
