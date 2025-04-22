@@ -146,7 +146,7 @@ Die Übung umfasst die folgenden Aufgaben:
 
    > **Hinweis:** Im automatisch angezeigten Textfeld können Sie entweder mit der Eingabe beginnen, um einen Entwurf zu erstellen, oder Sie geben **#** ein, um auf ein vorhandenes Issue in einem Ihrer GitHub-Repositorys zu verweisen. Wir beginnen mit der ersten dieser beiden Möglichkeiten.
 
-1. Geben Sie in das Textfeld **`Missing Wiki`** ein und drücken Sie dann die **Eingabetaste** auf der Tastatur. Dadurch wird der Spalte **ToDo** ein neuer Aufgabenentwurf hinzugefügt.
+1. Geben Sie in das Textfeld **`Missing Wiki`** ein und drücken Sie dann **Strg + Enter** auf der Tastatur. Dadurch wird der Spalte **ToDo** ein neuer Aufgabenentwurf hinzugefügt.
 1. Wählen Sie im neu hinzugefügten Aufgabenentwurf das Auslassungszeichen (…) aus, und wählen Sie im Dropdownmenü **Zu Issue konvertieren** aus.
 1. Wählen Sie in der Dropdownliste **Element auswählen** **DevOpsCoreIntroRepo** aus, um die Aufgabe zu dem Repository hinzuzufügen, das Sie in der vorherigen Übung erstellt haben. Beachten Sie, dass dem Issue automatisch die Bezeichnung **#2** zugewiesen wurde.
 1. Wählen Sie das Issue **Wiki fehlt** aus.
