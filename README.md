@@ -1,10 +1,7 @@
-#README
+> ⚠️ **Hinweis**  
+> Dieses Repository wird **am 14. November 2025 archiviert**.  
+> Das neue Repository für DevOps Labs finden Sie unter: [MicrosoftLearning/mslearn-devops](https://github.com/MicrosoftLearning/mslearn-devops).
 
-We've turned off the ability to report issues directly on this repo and do not monitor PRs.
-
-Provide feedback here: https://aka.ms/provide-feedback
-
-Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
 
 # AZ-2008: DevOps-Grundlagen: Die wichtigsten Grundsätze und Praktiken
 
